@@ -1,0 +1,49 @@
+﻿@model MVCCrud.Models.EmployeeInfo
+
+@{
+    ViewData["Title"] = "EditEmployeeData";
+}
+
+<h1>EditEmployeeData</h1>
+
+<h4>EmployeeInfo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="UpdateEmployeeData">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="EmpId" /> <!-- `EmpId` is hidden automatically while we create from razor view -->
+            <div class="form-group">
+                <label asp-for="EmpName" class="control-label"></label>
+                <input asp-for="EmpName" class="form-control" />
+                <span asp-validation-for="EmpName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmpAge" class="control-label"></label>
+                <input asp-for="EmpAge" class="form-control" />
+                <span asp-validation-for="EmpAge" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmpPhNo" class="control-label"></label>
+                <input asp-for="EmpPhNo" class="form-control" />
+                <span asp-validation-for="EmpPhNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmpSalary" class="control-label"></label>
+                <input asp-for="EmpSalary" class="form-control" />
+                <span asp-validation-for="EmpSalary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="EmpDisplayData">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

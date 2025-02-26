@@ -1,0 +1,36 @@
+﻿@model MVCCrud.Models.CommonModelClass
+
+<div class="row">
+    <div class="col-md-4">
+        <form id="updateProductsForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" id="pId"  asp-for="prodObj.ProdId" />
+            <div class="form-group">
+                <label asp-for="prodObj.ProdName" class="control-label"></label>
+                <input asp-for="prodObj.ProdName" id="pName" class="form-control" />
+                <span asp-validation-for="prodObj.ProdName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prodObj.ProdQuantity" class="control-label"></label>
+                <input asp-for="prodObj.ProdQuantity" id="pQty"  class="form-control" />
+                <span asp-validation-for="prodObj.ProdQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prodObj.ProdPrice" class="control-label"></label>
+                <input asp-for="prodObj.ProdPrice" id="pPrice" class="form-control" />
+                <span asp-validation-for="prodObj.ProdPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="button" value="Update" onclick ="updateProductsButton()" class="btn btn-primary" />
+            </div>
+        </form>
+        <a href="#" onclick="cancelButton()">Cancel</a>
+    </div> 
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    
+}

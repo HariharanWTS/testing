@@ -1,0 +1,53 @@
+﻿@model IEnumerable<MVCCrud.Models.ProductsInfo>
+
+@{
+    ViewData["Title"] = "ProductsDisplayData";
+}
+
+<h1>ProductsDisplayData</h1>
+
+<p>
+    <a asp-action="GetProductsData">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProdId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProdName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProdQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProdPrice)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProdId)
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProdName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProdQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProdPrice)
+            </td>
+            <td>
+                    <a asp-action="EditProductsInfo" asp-route-ProdId="@item.ProdId">Edit</a> |
+                    <a asp-action="DetailProductsInfo" asp-route-ProdId="@item.ProdId">Details</a> |
+                    <a asp-action="DeleteProductsInfo" asp-route-ProdId="@item.ProdId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

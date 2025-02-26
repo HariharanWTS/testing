@@ -1,0 +1,51 @@
+﻿@model MVCCrud.Models.CommonModelClass
+<!-- Used model class instead of `ProductsInfo` class-->
+@{
+    ViewData["Title"] = "GetProductsDataPartialView";
+}
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form id="newProductForm"> <!-- Removed `asp-action` from the form and added `id`. -->
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="prodObj.ProdName" class="control-label"></label>
+                <input asp-for="prodObj.ProdName" id="prodName" class="form-control"/> <!-- Here I have created `id` for fetch the data from the user input-->
+                <span asp-validation-for="prodObj.ProdName" class="text-danger"></span>
+            </div>
+
+            @* <!-- No use for this code just created drop down using `prodListObj` of `CommonModelClass`-->
+            <div class="form-group">
+                <label class="form-label">Dropdown</label>
+            <select  class="form-control" asp-items="@(new SelectList(Model.prodListObj, "ProdId", "ProdName"))"> <!-- `ProdId` and `ProdName` are the fields in `ProductsInfo` Table where `ProdId` will be the value passed to database and `ProdName` will be shown in the user interface. -->
+                    <option value="" selected disabled> Select Type</option>
+                </select>
+                <span asp-validation-for="prodObj.ProdName" class="text-danger"></span>
+            </div> *@
+
+            <div class="form-group">
+                <label asp-for="prodObj.ProdQuantity" class="control-label"></label>
+                <input asp-for="prodObj.ProdQuantity" class="form-control" />
+                <span asp-validation-for="prodObj.ProdQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prodObj.ProdPrice" class="control-label"></label>
+                <input asp-for="prodObj.ProdPrice" class="form-control" />
+                <span asp-validation-for="prodObj.ProdPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="button" id="createButton" value="Create" class="btn btn-primary" /> 
+                <!-- Changed input `type="button"` instead of `submit` and  also added `id` attribute with name-->
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts { 
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    @* We can also write our scripts below using inside <script>script goes here...</script>. *@
+}
+

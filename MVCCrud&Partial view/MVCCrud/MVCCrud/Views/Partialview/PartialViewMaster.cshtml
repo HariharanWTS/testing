@@ -1,0 +1,239 @@
+﻿@model MVCCrud.Models.CommonModelClass // Master page for partial view and here we used Model class for accessing the values
+
+<div id="divPartialMaster">
+    <div id="divProdCreateForm">
+        @{
+            await Html.RenderPartialAsync("_ProdCreateForm"); // `_` denotes the partial view/dynamic content
+        }
+    </div>
+    <div id="divProdEditForm">
+        @{
+            await Html.RenderPartialAsync("_ProdEditForm");
+        }
+    </div>
+    <div id="divAllProdList">
+        @{
+            await Html.RenderPartialAsync("_ProdListTable");
+        }
+    </div>
+</div>
+
+@* All the scripts must be written inside the below syntax.
+
+@section Scripts{
+<script>
+    Scripts goes here...
+</script>
+} 
+*@
+
+
+@section Scripts{ 
+    @* Scripts for all files are written below, but we can also write script on that `.cshtml file` itself. *@
+    <!-- I can give this Jquery and AJAX CDN  to this place too. bcoz of using the `_Layout.cshtml` layout to my entire web page, I have given the CDN in the `_Layout.cshtml` file. -->
+    
+    <!-- Sweet alert CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#divProdEditForm").hide() // We do not need edit section at first, so we hide using the JQuery.
+
+            // Logic for new entry of products.
+            $('#createButton').click(function () { // It is one type of writing `click` function method.
+                var prodName = $("#prodName").val(); // This is get the values of user input using id. (Both method can work.)
+                var prodQty = $("#@Html.IdFor(x => x.prodObj.ProdQuantity)").val(); // This is get the values of user input using another method. (Both method can work.) but while using this method we must not create an separate `id` attribute to that input tag.
+                var prodPrice = $("#@Html.IdFor(x => x.prodObj.ProdPrice)").val();
+
+                // `JSON.stringify({})` is the way of sending data to the controller
+                var prodDetails = JSON.stringify({
+                    "ProdName": prodName,
+                    "ProdQuantity": prodQty,
+                    "ProdPrice": prodPrice
+                }); // The names which are used i.e `ProdName,ProdQuantity, ProdPrice` are as same as `ProductsInfo` class.
+
+                $.ajax({
+                    url: '@Url.Action("AddNewProductsData","Partialview")',//syntax: '@Url.Action("<ActionMethodName>", "<ControllerName>")'
+                    type: 'POST', // `POST` method for sending data to the database via controller in asp.net MVC
+                    data: prodDetails, // send the data with JSON.stringify format.
+                    contentType: 'application/json',
+                    success: function (value) {
+                        //console.log(value); // `value` contains the html code of the `.cshtml file` which was retrun from the `PartialView` of `PartialviewController`. E.g Full html code of `_ProdListTable.cshtml`
+                        $("#divAllProdList").empty(); // $("#divAllProdList").html('') is also the same meaning. i.e. We are emptying the html content in that particular `id`.
+                        $("#divAllProdList").html(value) // $("#divAllProdList").html(value) will set the code as html code
+                        $("#newProductForm")[0].reset() // It will make the form to reset. This `id` will come from `_ProdCreateForm.cshtml` form.
+                    },
+                    error: function (xhr, status, error) {
+                        console.log("xhr response: ", xhr.responseText);
+                        console.log("Error Status: ", status);
+                        console.log("Error name: ", error)
+
+                    }
+
+                });
+            });
+
+            // // Below function is not working properly, so I replaced this code with `onclick` attribure.
+            // // Logic for `Edit` in Product List Table 
+            // $(".editButton").on("click", function () { // It is another type of writing `click` function method.
+            //     var prod_id = $(this).attr("data-value"); // `$(this).data("value")` is another form of fetch the data and `this` is a keyword that denotes current id i.e.`#editButton`.
+            //     //console.log("Edit id: ",prod_id)
+                
+            //     $.ajax({
+            //         url: '@Url.Action("EditProductData","Partialview")',
+            //         type: 'GET', // `GET` method is used to retrive the data form database through controller
+            //         data: { "ProdId": prod_id },
+            //         contentType: 'application/json',
+            //         success: function (resp) {
+            //             //console.log(resp)
+            //             $("#divProdCreateForm").hide(); // Hiding the "ProdCreateForm" because edit form will become active.
+            //             $("#divProdEditForm").html(resp);
+            //             $("#divProdEditForm").show(); // It is already hide atfirst, so we have to show it.
+            //         },
+            //         error: function () {
+            //             console.log("Error")
+            //         }
+
+            //     });
+            // });
+            
+        });
+
+        
+
+        
+    </script>
+    
+    <script> // Here we used different script tag for `onclick` function, because while using same script sometimes it shows error
+
+        // Logic for update button
+        function updateProductsButton() {
+            var disp_text = "Are you sure to Update\nPress OK to update (or) Press Cancel"
+            if (confirm(disp_text)){
+                console.log("Confirm update")
+                var prodId = $("#pId").val();
+                var prodName = $("#pName").val();
+                var prodQty = $("#pQty").val();
+                var prodPrice = $("#pPrice").val();
+
+                var details = {
+                    "ProdId": prodId,
+                    "ProdName": prodName,
+                    "ProdQuantity": prodQty,
+                    "ProdPrice": prodPrice
+                };
+                $.ajax({
+                    url: '@Url.Action("UpdateProductData", "Partialview")',
+                    type: 'POST',
+                    data: JSON.stringify(details), // another method stringify the data and sending to the controller
+                    contentType: 'application/json',
+                    success: function (value) {
+                        $("#divAllProdList").html('');
+                        $("#divAllProdList").html(value);
+                        //console.log(value);
+                        $("#divProdEditForm").hide();
+                        $("#divProdCreateForm").show();
+                    },
+                    error: function () {
+                        console.log("Error")
+                    }
+                });
+            }
+            else{
+                console.log("Update Cancel")
+            }
+        }
+    </script>
+
+    <script>
+
+        //Logic for Edit button
+        function EditProductsInfo(prod_id) {
+            $.ajax({
+                url: '@Url.Action("EditProductData", "Partialview")',
+                type: 'GET', // `GET` method is used to retrive the data form database through controller
+                data: { "ProdId": prod_id },
+                contentType: 'application/json', // While sending `single data` with `type: GET` a `contentType` is may or may not be used.
+                success: function (resp) {
+                    //console.log(resp)
+                    $("#divProdCreateForm").hide(); // Hiding the "ProdCreateForm" because edit form will become active.
+                    $("#divProdEditForm").html(resp);
+                    $("#divProdEditForm").show(); // It is already hide atfirst, so we have to show it.
+                },
+                error: function () {
+                    console.log("Error")
+                }
+
+            });
+        }
+    </script>
+
+    <script>
+
+        //Logic for delete button and addedd `sweet alert` code.
+        function DeleteProductsInfo(prod_id) {
+
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                    confirmButton: "btn btn-success",
+                    cancelButton: "btn btn-danger"
+                },
+                buttonsStyling: false
+            });
+            swalWithBootstrapButtons.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this product data!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonText: "Yes, delete it!",
+                cancelButtonText: "No, cancel!",
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Below this is an AJAX code
+                    $.ajax({
+                        url: '@Url.Action("DeleteProductData", "Partialview")',
+                        type: 'POST',
+                        data: { "ProdId": prod_id },// While sending `single data` with `type:POST` `contentType` is must not be used.
+                        success: function (resp) {
+                            //console.log(resp)
+                            $("#divAllProdList").empty();
+                            console.log(resp);
+                            $("#divAllProdList").html(resp);
+                        },
+                        error: function () {
+                            console.log("Error")
+                        }
+                    });
+                    // Upto this are AJAX Code
+                    swalWithBootstrapButtons.fire({
+                        title: "Deleted!",
+                        text: "Your product data has been deleted.",
+                        icon: "success"
+                    });
+                } else if (
+                    /* Read more about handling dismissals below */
+                    result.dismiss === Swal.DismissReason.cancel
+                ) {
+                    swalWithBootstrapButtons.fire({
+                        title: "Cancelled",
+                        text: "Your product data is safe :)",
+                        icon: "error"
+                    });
+                }
+            });
+        }
+    </script>
+    
+    <script>
+
+        // Logic for cancel button using `onclick` method
+        function cancelButton() {
+            console.log("Clear data");
+            $("#divProdEditForm").hide();
+            $("#divProdCreateForm").show()
+        }
+    </script>
+
+    
+}

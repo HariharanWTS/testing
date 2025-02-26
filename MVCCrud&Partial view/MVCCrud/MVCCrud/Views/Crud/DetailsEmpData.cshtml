@@ -1,0 +1,42 @@
+﻿@model MVCCrud.Models.EmployeeInfo
+
+@{
+    ViewData["Title"] = "DetailsEmpData";
+}
+
+<h1>DetailsEmpData</h1>
+
+<div>
+    <h4>EmployeeInfo</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EmpName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EmpName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EmpAge)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EmpAge)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EmpPhNo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EmpPhNo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EmpSalary)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EmpSalary)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="EditEmployeeData" asp-route-EmpId="@Model?.EmpId">Edit</a> |
+    <a asp-action="EmpDisplayData">Back to List</a>
+</div>

@@ -1,0 +1,103 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MVCCrud
+build_property.RootNamespace = MVCCrud
+build_property.ProjectDir = D:\Hariharan_WTS\CSharp\WTS Task\ASPDOTNETMVC\MVCCrud&Partial view\MVCCrud\MVCCrud\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = D:\Hariharan_WTS\CSharp\WTS Task\ASPDOTNETMVC\MVCCrud&Partial view\MVCCrud\MVCCrud
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Crud/DetailProductsInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZFxEZXRhaWxQcm9kdWN0c0luZm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Crud/DetailsEmpData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZFxEZXRhaWxzRW1wRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Crud/EditEmployeeData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZFxFZGl0RW1wbG95ZWVEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Crud/EditProductsInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZFxFZGl0UHJvZHVjdHNJbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Crud/EmpDisplayData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZFxFbXBEaXNwbGF5RGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Crud/EmpGetData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZFxFbXBHZXREYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Crud/GetProductsData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZFxHZXRQcm9kdWN0c0RhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Crud/ProductsDisplayData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZFxQcm9kdWN0c0Rpc3BsYXlEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Partialview/PartialViewMaster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHZpZXdcUGFydGlhbFZpZXdNYXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Partialview/_ProdCreateForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHZpZXdcX1Byb2RDcmVhdGVGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Partialview/_ProdEditForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHZpZXdcX1Byb2RFZGl0Rm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Partialview/_ProdListTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHZpZXdcX1Byb2RMaXN0VGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Hariharan_WTS/CSharp/WTS Task/ASPDOTNETMVC/MVCCrud&Partial view/MVCCrud/MVCCrud/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-haayjnp8hr

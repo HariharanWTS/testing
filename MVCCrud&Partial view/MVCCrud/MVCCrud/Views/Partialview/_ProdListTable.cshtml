@@ -1,0 +1,56 @@
+﻿@model MVCCrud.Models.CommonModelClass // IENumerable is not used here and used `CommonModelClass` insted of `ProductsInfo`.
+
+@{
+    ViewData["Title"] = "ProductsList"; 
+}
+@* // The data for this table is came from `PartialViewMaster` action method because this action method has the `PartialViewMaster.cshtml` view file, in that view file there is a mentioning of `_ProListTable.cshtml` file and already the action method has loaded with list objects.
+ *@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Product Id
+            </th>
+            <th>
+                Product Name
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th>
+                Price
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.prodListObj) // `prodListObj` is an list object which is already created as a field in `CommonModelClass`.
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProdId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProdName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProdQuantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProdPrice)
+                </td>
+                <td>
+                    <a href="#" class="editButton" data-value=@item.ProdId onclick="EditProductsInfo(@item.ProdId)">Edit</a> | <!-- used 'class' and `id` for Jquery code but this is not working properly, so used `onclick` attribute -->
+                    @* <a href="#" onclick="DetailProductsInfo(@item.ProdId)">Details</a> | *@
+                    <a href="#" onclick="DeleteProductsInfo(@item.ProdId)">Delete</a> <!-- used `onclick` method for Javascript code -->
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

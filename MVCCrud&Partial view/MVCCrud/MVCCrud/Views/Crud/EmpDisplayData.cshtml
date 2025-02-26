@@ -1,0 +1,62 @@
+﻿@model IEnumerable<MVCCrud.Models.EmployeeInfo>
+
+@{
+    ViewData["Title"] = "EmpDisplayData";
+}
+
+<h1>EmpDisplayData</h1>
+
+<p>
+    <a asp-action="EmpGetData">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpAge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpPhNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpSalary)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpAge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpPhNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpSalary)
+            </td>
+            @* <td>
+                <a asp-action="Edit" asp-route-id="@item.EmpId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EmpId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.EmpId">Delete</a>
+            </td> *@
+                <!-- Above comment lines are created by using `razor views` where we need to change in `asp-route` from `asp-route-id` to `asp-route-EmpId` where `EmpId` can be user defined name and it is used as parameter (with same name) in the action method(EditEmployeeData) and
+                also in `asp-action = "EditEmployeeData"` where `EditEmployeeData` is an action method in the controller -->
+            <td>
+                <a asp-action="EditEmployeeData" asp-route-EmpId="@item.EmpId">Edit</a> |
+                    <a asp-action="DetailsEmpData" asp-route-EmpId="@item.EmpId">Details</a> |
+                <a asp-action="DeleteEmployeeData" asp-route-EmpId="@item.EmpId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+

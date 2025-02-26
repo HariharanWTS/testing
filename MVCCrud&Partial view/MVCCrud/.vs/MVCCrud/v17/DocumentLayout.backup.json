@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|d:\\hariharan_wts\\csharp\\wts task\\aspdotnetmvc\\mvccrud\u0026partial view\\mvccrud\\mvccrud\\views\\partialview\\partialviewmaster.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|solutionrelative:mvccrud\\views\\partialview\\partialviewmaster.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|d:\\hariharan_wts\\csharp\\wts task\\aspdotnetmvc\\mvccrud\u0026partial view\\mvccrud\\mvccrud\\views\\partialview\\_prodeditform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|solutionrelative:mvccrud\\views\\partialview\\_prodeditform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|d:\\hariharan_wts\\csharp\\wts task\\aspdotnetmvc\\mvccrud\u0026partial view\\mvccrud\\mvccrud\\data\\generaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|solutionrelative:mvccrud\\data\\generaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|d:\\hariharan_wts\\csharp\\wts task\\aspdotnetmvc\\mvccrud\u0026partial view\\mvccrud\\mvccrud\\models\\commonmodelclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|solutionrelative:mvccrud\\models\\commonmodelclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|d:\\hariharan_wts\\csharp\\wts task\\aspdotnetmvc\\mvccrud\u0026partial view\\mvccrud\\mvccrud\\controllers\\partialviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|solutionrelative:mvccrud\\controllers\\partialviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|d:\\hariharan_wts\\csharp\\wts task\\aspdotnetmvc\\mvccrud\u0026partial view\\mvccrud\\mvccrud\\views\\partialview\\_prodlisttable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|solutionrelative:mvccrud\\views\\partialview\\_prodlisttable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|d:\\hariharan_wts\\csharp\\wts task\\aspdotnetmvc\\mvccrud\u0026partial view\\mvccrud\\mvccrud\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|solutionrelative:mvccrud\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|d:\\hariharan_wts\\csharp\\wts task\\aspdotnetmvc\\mvccrud\u0026partial view\\mvccrud\\mvccrud\\views\\partialview\\_prodcreateform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8862620-2D4C-434A-987C-D0E793ED7444}|MVCCrud\\MVCCrud.csproj|solutionrelative:mvccrud\\views\\partialview\\_prodcreateform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "MVCCrud\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "MVCCrud\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T06:22:41.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GeneralDbContext.cs",
+              "DocumentMoniker": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Data\\GeneralDbContext.cs",
+              "RelativeDocumentMoniker": "MVCCrud\\Data\\GeneralDbContext.cs",
+              "ToolTip": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Data\\GeneralDbContext.cs",
+              "RelativeToolTip": "MVCCrud\\Data\\GeneralDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T06:22:22.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CommonModelClass.cs",
+              "DocumentMoniker": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Models\\CommonModelClass.cs",
+              "RelativeDocumentMoniker": "MVCCrud\\Models\\CommonModelClass.cs",
+              "ToolTip": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Models\\CommonModelClass.cs",
+              "RelativeToolTip": "MVCCrud\\Models\\CommonModelClass.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T12:30:31.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ProdEditForm.cshtml",
+              "DocumentMoniker": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Views\\Partialview\\_ProdEditForm.cshtml",
+              "RelativeDocumentMoniker": "MVCCrud\\Views\\Partialview\\_ProdEditForm.cshtml",
+              "ToolTip": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Views\\Partialview\\_ProdEditForm.cshtml",
+              "RelativeToolTip": "MVCCrud\\Views\\Partialview\\_ProdEditForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T09:39:01.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ProdListTable.cshtml",
+              "DocumentMoniker": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Views\\Partialview\\_ProdListTable.cshtml",
+              "RelativeDocumentMoniker": "MVCCrud\\Views\\Partialview\\_ProdListTable.cshtml",
+              "ToolTip": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Views\\Partialview\\_ProdListTable.cshtml",
+              "RelativeToolTip": "MVCCrud\\Views\\Partialview\\_ProdListTable.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACoAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T08:53:57.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PartialviewController.cs",
+              "DocumentMoniker": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Controllers\\PartialviewController.cs",
+              "RelativeDocumentMoniker": "MVCCrud\\Controllers\\PartialviewController.cs",
+              "ToolTip": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Controllers\\PartialviewController.cs",
+              "RelativeToolTip": "MVCCrud\\Controllers\\PartialviewController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwD8AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T10:24:06.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PartialViewMaster.cshtml",
+              "DocumentMoniker": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Views\\Partialview\\PartialViewMaster.cshtml",
+              "RelativeDocumentMoniker": "MVCCrud\\Views\\Partialview\\PartialViewMaster.cshtml",
+              "ToolTip": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Views\\Partialview\\PartialViewMaster.cshtml",
+              "RelativeToolTip": "MVCCrud\\Views\\Partialview\\PartialViewMaster.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T10:24:17.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ProdCreateForm.cshtml",
+              "DocumentMoniker": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Views\\Partialview\\_ProdCreateForm.cshtml",
+              "RelativeDocumentMoniker": "MVCCrud\\Views\\Partialview\\_ProdCreateForm.cshtml",
+              "ToolTip": "D:\\Hariharan_WTS\\CSharp\\WTS Task\\ASPDOTNETMVC\\MVCCrud\u0026Partial view\\MVCCrud\\MVCCrud\\Views\\Partialview\\_ProdCreateForm.cshtml",
+              "RelativeToolTip": "MVCCrud\\Views\\Partialview\\_ProdCreateForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T09:27:32.452Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

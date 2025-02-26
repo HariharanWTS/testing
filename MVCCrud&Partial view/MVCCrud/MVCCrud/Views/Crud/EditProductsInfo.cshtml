@@ -1,0 +1,44 @@
+﻿@model MVCCrud.Models.ProductsInfo
+
+@{
+    ViewData["Title"] = "EditProductsInfo";
+}
+
+<h1>EditProductsInfo</h1>
+
+<h4>ProductsInfo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="UpdateProductsInfo">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ProdId" />
+            <div class="form-group">
+                <label asp-for="ProdName" class="control-label"></label>
+                <input asp-for="ProdName" class="form-control" />
+                <span asp-validation-for="ProdName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProdQuantity" class="control-label"></label>
+                <input asp-for="ProdQuantity" class="form-control" />
+                <span asp-validation-for="ProdQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProdPrice" class="control-label"></label>
+                <input asp-for="ProdPrice" class="form-control" />
+                <span asp-validation-for="ProdPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="ProductsDisplayData">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

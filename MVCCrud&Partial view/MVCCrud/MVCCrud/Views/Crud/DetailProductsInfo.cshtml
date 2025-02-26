@@ -1,0 +1,36 @@
+﻿@model MVCCrud.Models.ProductsInfo
+
+@{
+    ViewData["Title"] = "DetailProductsInfo";
+}
+
+<h1>DetailProductsInfo</h1>
+
+<div>
+    <h4>ProductsInfo</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProdName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProdName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProdQuantity)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProdQuantity)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProdPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProdPrice)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="EditProductsInfo" asp-route-ProdId="@Model?.ProdId">Edit</a> |
+    <a asp-action="ProductsDisplayData">Back to List</a>
+</div>
