@@ -73,6 +73,7 @@ namespace MVCCrud.Controllers
             };
             return PartialView("_ProdEditForm", new ProductsInfo());
         }
+        // new
 
         [HttpPost]
         public IActionResult UpdateProductData([FromBody]ProductsInfo pObj)
